@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lighthouse/config/common_full_phone.mk)
 
 # Inherit from rs988 device
 $(call inherit-product, device/lge/rs988/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := rs988
-PRODUCT_NAME := lineage_rs988
+PRODUCT_NAME := lighthouse_rs988
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-RS988
 PRODUCT_MANUFACTURER := LGE
@@ -38,3 +38,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="h1_lra_us-user 7.0 NRD90U 1707917149a1b release-keys"
 
 BUILD_FINGERPRINT := "lge/h1_lra_us/h1:7.0/NRD90U/1707917149a1b:user/release-keys"
+
+
+LIGHTHOUSE_BUILD_TYPE=OFFICIAL
+
+# Gapps
+WITH_GAPPS := true
+
