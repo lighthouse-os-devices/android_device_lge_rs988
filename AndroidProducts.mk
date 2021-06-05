@@ -17,5 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lighthouse_rs988.mk
 
 COMMON_LUNCH_CHOICES := \
+    lighthouse_rs988-user \
     lighthouse_rs988-userdebug \
     lighthouse_rs988-eng
