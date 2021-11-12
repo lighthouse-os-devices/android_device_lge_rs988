@@ -42,6 +42,4 @@ BUILD_FINGERPRINT := "lge/h1_lra_us/h1:7.0/NRD90U/1707917149a1b:user/release-key
 
 LIGHTHOUSE_BUILD_TYPE=OFFICIAL
 
-# Gapps
-WITH_GAPPS := true
 
